@@ -5,7 +5,55 @@
 // Using only JavaScript, create a prompt telling the user, "Enter a word to see if it is a palindrome", then create a way to check if the word is in fact a palindrome.  If it is, have JavaScript console.log that their word is a palindrome; if it is not, have JavaScript console.log the opposite.
 
 
-let word1 = "racecar";
+
+//CHALLENGE//
+function checkPalindrome(word) {
+    
+    var reversedword = word.split('').reverse().join('');
+        
+        if (word === reversedword) {
+           
+            console.log("Palindrome")
+        } else {
+
+         console.log("Not a Palindrome") 
+        } }
+        
+        checkPalindrome('lol');
+        
+        //CHALLENGE//
+// write a function that checks to see if all characters in a string are unique 
+// TOOLS:   
+//  FUNCTION WITH A PARAMETER, FOR LOOPS, CONDITIONAL, SPLIT()
+
+let x = "String";
+let y = "racecar";
+
+let check = (checking) => {
+    let broken = checking.split("");
+    for (item in broken) {
+        for (item2 in broken) {
+            console.log(item, item2);
+            if (broken[item] === broken[item2] && item !== item2) {
+            console.log("Not unique");
+        }
+    }
+}
+check(y);
+//
+
+function isPalindrome(word) {
+    var reversedword = word.split('').reverse().join('');
+    return word === reversedword;
+  }
+  
+  var s = 'tony';
+  if (isPalindrome(s))
+    console.log('Yes');
+  else
+    console.log('No');
+
+    let word1 = "no";
 
 let word2 = word1.split("");
 
@@ -22,43 +70,3 @@ if (word1 == word4) {
 } else {
     console.log('not a palindrome')
 }
-
-
-
-
-function check_Palindrome(str_entry){
-    // Change the string into lower case and remove  all non-alphanumeric characters
-       var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
-        var ccount = 0;
-    // Check whether the string is empty or not
-        if(cstr==="") {
-            console.log("Nothing found!");
-            return false;
-        }
-    // Check if the length of the string is even or odd 
-        if ((cstr.length) % 2 === 0) {
-            ccount = (cstr.length) / 2;
-        } else {
-    // If the length of the string is 1 then it becomes a palindrome
-            if (cstr.length === 1) {
-                console.log("Entry is a palindrome.");
-                return true;
-            } else {
-    // If the length of the string is odd ignore middle character
-                ccount = (cstr.length - 1) / 2;
-            }
-        }
-    // Loop through to check the first character to the last character and then move next
-        for (var x = 0; x < ccount; x++) {
-    // Compare characters and drop them if they do not match 
-            if (cstr[x] != cstr.slice(-1-x)[0]) {
-                console.log("Entry is not a palindrome.");
-                return false;
-            }
-        }
-        console.log("The entry is a palindrome.");
-        return true;
-    }
-    check_Palindrome('madam');
-    check_Palindrome('nurses run');
-    check_Palindrome('fox');
