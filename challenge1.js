@@ -20,7 +20,23 @@ function checkPalindrome(word) {
         } }
         
         checkPalindrome('lol');
+
+function isPalindrome(word) {
+    var reversedword = word.split('').reverse().join('');
+    return word === reversedword;
+  }
+  
+  var s = 'tony';
+  if (isPalindrome(s))
+    console.log('Yes');
+  else
+    console.log('No');
+
+
         
+       
+       
+       
         //CHALLENGE//
 // write a function that checks to see if all characters in a string are unique 
 // TOOLS:   
@@ -28,6 +44,7 @@ function checkPalindrome(word) {
 
 let x = "String";
 let y = "racecar";
+
 
 let check = (checking) => {
     let broken = checking.split("");
@@ -40,18 +57,7 @@ let check = (checking) => {
     }
 }
 check(y);
-//
 
-function isPalindrome(word) {
-    var reversedword = word.split('').reverse().join('');
-    return word === reversedword;
-  }
-  
-  var s = 'tony';
-  if (isPalindrome(s))
-    console.log('Yes');
-  else
-    console.log('No');
 
     let word1 = "no";
 
