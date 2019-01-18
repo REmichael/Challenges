@@ -26,7 +26,7 @@ function isPalindrome(word) {
     return word === reversedword;
   }
   
-  var s = 'tony';
+  var s = 'boob';
   if (isPalindrome(s))
     console.log('Yes');
   else
@@ -59,7 +59,7 @@ let check = (checking) => {
 check(y);
 
 
-    let word1 = "no";
+    let word1 = "non";
 
 let word2 = word1.split("");
 
@@ -75,4 +75,5 @@ if (word1 == word4) {
     console.log('that word is a palindrome')
 } else {
     console.log('not a palindrome')
+}
 }
