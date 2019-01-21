@@ -1,0 +1,11 @@
+.controlsForm {
+    background-color: lightgreen;
+    width: 800px;
+    margin: 200px;
+    padding: 40px;
+    
+}
+
+#myForm {
+    text-align: center;
+}
