@@ -18,6 +18,8 @@ if (username === empty || password === empty || confirmPassword === empty) {
 }
 if (password !== confirmPassword) {
   alert("Your passwords MUST match")
-} 
-submit.style.display = "none"
+} else {
+}
+document.getElementById('submit').disable = true;
+
 };
